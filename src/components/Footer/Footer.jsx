@@ -6,9 +6,9 @@ function Footer() {
 
   return (
     <>
-    <div className='footer   bg-gray-800' >
+    <footer className='footer   bg-gray-800' >
     <h1 className='text-center text-stone-50 font-bold '> 2024 Playbook | A Research Project</h1>
-    </div>
+    </footer>
     </>
   )
 }
