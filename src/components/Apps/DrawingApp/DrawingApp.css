@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Drawing_app {
+  
+    display: flex;
+    align-items: baseline;
+   
+   
+  }
+  .Drawing_canva {
+    border: 8px solid black;
+      display: flex;
+      background-color: rgb(255, 255, 255);
+     
+    }
+  .Drawing_board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 20px;
+    width: 20%;
+    height: 450px;
+   
+  }
+  
+  button {
+    border-radius: 10%;
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+  }
+
+.circle_draw{
+  background-image: url("public/draw/color.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  border: 5px solid black;
+}
+
+.circle_draw_erase{
+  background-image: url("public/draw/erase.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  background-color: white;
+  border-radius: 50%;
+}

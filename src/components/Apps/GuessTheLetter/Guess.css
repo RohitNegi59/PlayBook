@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.showmodel {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    background: transparent;
+    background-size: 105%;
+}
+
+
+.Name {
+
+    font-size: xx-large;
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+.Name_div {
+    border: 3px solid;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 1px;
+    height: 100px;
+    background-color: white;
+}
+
+.outerdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 86%;
+    background-image: url(/guess.jpg);
+    background-size: 105%;
+}
+
+.Card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    background-color: azure;
+    border-radius: 10%;
+    width: 30%;
+    height: 150px;
+}
+
+.alphabets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    width: 80%;
+    height: 300px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    background-color: antiquewhite;
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.circle>button {
+    font-size: xx-large;
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border-style: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.image-size {
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+}

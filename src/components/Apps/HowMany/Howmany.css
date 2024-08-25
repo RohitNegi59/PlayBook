@@ -1,0 +1,31 @@
+.card_how_many{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    background-color: azure;
+    border-radius: 10%;
+    width: auto;
+    height: 150px;
+}
+
+.image-size_how_many {
+    overflow: hidden;
+    width: 90px;
+    height: 90px;
+}
+
+.outerdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 86%;
+    background-image: url(/howmany.jpg);
+    background-size: 100%;
+}
+
+.outer_name_div{
+    background-color: white;
+}

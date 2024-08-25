@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.Cardholder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 390px;
+    height: 410px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.CardImage {
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+.rectinput {
+    width: 240px;
+    height: 40px;
+}
+
+.cardbutton {
+    background-color: blue;
+    width: 95px;
+    height: 40px;
+}
+.card_text{
+   
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
