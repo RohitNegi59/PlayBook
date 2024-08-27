@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import './Guess.css'
 import Lottie from 'lottie-react';
 import showtime from './showtime.json'
-const ShowModel = (props) => {
+const ShowModel = () => {
   return (
    
     <dialog close className='showmodel'>
        
       <div>
-      <Lottie animationData={showtime}/><button onClick={props.close}  ></button></div>
+      <Lottie animationData={showtime}/></div>
       </dialog>
   )
 }

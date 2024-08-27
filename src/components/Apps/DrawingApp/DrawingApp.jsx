@@ -41,21 +41,20 @@ const DrawingApp = () => {
                     <input type="color" value={color} onChange={(e) => setColor(e.target.value)} />
                   </div>
                   <div className='circle_draw' >
-                    <input type="number" min={"1"} max={"20"} value={lineWidth} onChange={(e) => setLineWidth(e.target.value)} />
+                    <input type="number" min={"1"} max={"20"} value={lineWidth}     onChange={(e) => {
+                      const newWidth = parseInt(e.target.value, 10);
+                      setLineWidth(newWidth);
+                      setPainterLineWidth(newWidth);
+                    }} />
                   </div>
                 </div>
 
                 <div className='Drawing_canva awesomeContainer'>{canvas}</div>
 
               </div>
-
-
-
-            
+   
 
           )}
-
-
 
         />
 
@@ -68,3 +67,6 @@ const DrawingApp = () => {
 
 
 export default DrawingApp
+
+
+
