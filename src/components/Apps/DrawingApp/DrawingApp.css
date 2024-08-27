@@ -40,7 +40,7 @@
   }
 
 .circle_draw{
-  background-image: url("public/draw/color.jpg");
+  background-image: url("/draw/color.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -53,7 +53,7 @@
 }
 
 .circle_draw_erase{
-  background-image: url("public/draw/erase.jpg");
+  background-image: url("/draw/erase.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
