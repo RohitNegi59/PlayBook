@@ -8,7 +8,6 @@ import Cat from './Cat';
 import Child from './Child';
 
 
-
 function Yoga() {
   const [yog,setYog] = useState(false)
   const [cobra,setCobra] = useState(false)
