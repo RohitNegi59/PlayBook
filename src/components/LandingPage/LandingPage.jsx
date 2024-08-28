@@ -9,7 +9,7 @@ function LandingPage() {
   return (
     <>
     <div className='LandingBackground '>
-  <div className='flex justify-center '>
+  <div className='flex justify-center middle'>
     <div id="top_left_petel" className='bg-gray-300 w-40 h-40 rounded-full m-2 text-center' >
      <NavLink to="/Draw"><button className='whitebg'>Draw</button></NavLink>
     </div>
@@ -18,7 +18,7 @@ function LandingPage() {
     </div>
   </div>
 
-  <div className='flex justify-center'>
+  <div className='flex justify-center middle'>
     <div id="middle_left_petel" className='bg-gray-300 w-40 h-40 rounded-full m-4'>
     <NavLink to="/Howmany"><button className='whitebg'>How Many</button></NavLink>
     </div>
@@ -30,7 +30,7 @@ function LandingPage() {
     </div>
   </div>
 
-  <div className='flex justify-center '>
+  <div className='flex justify-center middle'>
     <div id="bottom_left_petel" className='bg-gray-300 w-40 h-40 rounded-full m-2' >
     <NavLink to="/vegetables"><button className='whitebg'>Vegetables</button></NavLink>
     </div>
