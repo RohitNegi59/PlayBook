@@ -1,6 +1,31 @@
-.veg{
-    margin: 10px;
-    width: 15rem;
-    height: 200px;
-    border: 2px solid black;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.veg_rect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    background-color: antiquewhite;
+    margin: 5px;
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+}
+.veg_rect:active{
+    background-color: blueviolet;
+}
+.veg_rect>button {
+    font-size: xx-large;
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border-style: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
