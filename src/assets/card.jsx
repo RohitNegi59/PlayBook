@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './Card.css'
 import ShowModel from '../components/Apps/GuessTheLetter/ShowModel';
+import WrongModel from '/src/assets/WrongModel.jsx';
 function Card() {
 
   const Spell = [
@@ -45,7 +46,7 @@ function Card() {
 
 
   const Check = () => {
-    if (name == Spell[currentIndex].name) {
+    if (name === Spell[currentIndex].name || name.toLowerCase() === Spell[currentIndex].name.toLowerCase()) {
 
       setShowModel(true);
       setTimeout(() => {
@@ -56,8 +57,13 @@ function Card() {
 
     }
     else {
-      console.log("better Luck Next Time")
       setShowModel(false);
+      setWrongModel(true);
+      setTimeout(() => {
+        setWrongModel(false);
+        const newIndex = Math.floor(Math.random() * images.length);
+        setCurrentIndex(newIndex);
+      }, 3000);
 
     }
   };
@@ -66,6 +72,7 @@ function Card() {
 
   const [name, setName] = useState(null)
   const [showModel, setShowModel] = useState(false)
+  const [wrongModel, setWrongModel] = useState(false)
 
   const [currentIndex, setCurrentIndex] = useState(
     Math.floor(Math.random() * Spell.length)
@@ -80,6 +87,7 @@ function Card() {
   return (
     <>
       {showModel && <ShowModel close={close} />}
+      {wrongModel && <WrongModel />}
       <div className="Cardholder">
 
         <div className="CardImage"><img className="card_image" src={Spell[currentIndex].img}></img></div>

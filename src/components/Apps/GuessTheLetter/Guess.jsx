@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Guess.css'
 import ShowModel from './ShowModel';
+import WrongModel from '../../../assets/WrongModel';
 
 import img1 from '/src/Image/apple.jpg';
 import img2 from '/src/Image/Ball.jpg';
@@ -65,6 +66,7 @@ function Guess() {
     Math.floor(Math.random() * images.length)
   );
   const [showModel, setShowModel] = useState(false)
+  const [wrongModel, setWrongModel] = useState(false)
 
 
 
@@ -85,6 +87,12 @@ function Guess() {
     }
     else {
       setShowModel(false);
+      setWrongModel(true);
+      setTimeout(() => {
+        setWrongModel(false);
+        const newIndex = Math.floor(Math.random() * images.length);
+        setCurrentIndex(newIndex);
+      }, 3000);
     }
   };
 
@@ -100,6 +108,7 @@ function Guess() {
           <img className="image-size " src={images[currentIndex]} alt="Random Image" />
         </div>
         {showModel && <ShowModel />}
+        {wrongModel && <WrongModel />}
         <div className="alphabets">
           <div className='row row1'>
             <div className="circle"><button value="0" onClick={checking}>A</button></div>

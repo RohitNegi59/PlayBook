@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Howmany.css'
-
+import WrongModel from '../../../assets/WrongModel';
 import ShowModel from '../GuessTheLetter/ShowModel';
 import img1 from '/src/Image/apple.jpg';
 import img2 from '/src/Image/Ball.jpg';
@@ -20,7 +20,7 @@ function Howmany() {
     Math.floor(Math.random() * images.length)
   );
   const [showModel, setShowModel] = useState(false)
-
+  const [wrongModel, setWrongModel] = useState(false)
 
   const image = (count) => {
     const imageElements = [];
@@ -44,7 +44,12 @@ function Howmany() {
     }
     else {
       setShowModel(false);
-      console.log("better luck next time")
+      setWrongModel(true);
+      setTimeout(() => {
+        setWrongModel(false);
+        const newIndex = Math.floor(Math.random() * images.length);
+        setCurrentIndex(newIndex);
+      }, 3000);
 
     }
   };
@@ -66,6 +71,7 @@ function Howmany() {
 
         </div>
         {showModel && <ShowModel />}
+        {wrongModel && <WrongModel />}
 
         <div className="Numbers">
           <div className='row row1'>
