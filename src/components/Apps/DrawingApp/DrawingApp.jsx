@@ -23,7 +23,7 @@ const DrawingApp = () => {
  <div className='outerdiv'>
       <div className='Name_div'>
         <div className="Name">
-          Guess The Letter
+          Drawing-Book
         </div>
       </div>
 
