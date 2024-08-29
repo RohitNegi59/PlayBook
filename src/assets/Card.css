@@ -38,3 +38,13 @@
     font-weight: 800;
     font-style: normal;
 }
+
+@media (max-width: 750px) {
+
+    .Cardholder{
+        width: 300px;
+        height: 400px;
+    }
+   
+   
+  }

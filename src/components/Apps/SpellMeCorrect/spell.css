@@ -23,3 +23,13 @@
     background-size: 105%;
 
 }
+
+@media (max-width: 750px) {
+
+    .spellbox{
+        background-image: url(/mobileguess.jpg);
+        background-repeat: repeat;
+    }
+   
+   
+  }

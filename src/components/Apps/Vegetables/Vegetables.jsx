@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Vegetables.css'
 import ShowModel from '../GuessTheLetter/ShowModel';
-
+import WrongModel from '../../../assets/WrongModel';
 import img1 from '/Vegetable/bringle.png';
 import img2 from '/Vegetable/radish.png';
 import img3 from '/Vegetable/LadyFinger.png';
@@ -25,6 +25,7 @@ function Vegetables() {
     Math.floor(Math.random() * images.length)
   );
   const [showModel, setShowModel] = useState(false)
+  const [wrongModel, setWrongModel] = useState(false)
 
 
 
@@ -60,6 +61,7 @@ function Vegetables() {
           <img className="image-size " src={images[currentIndex]} alt="Random Image" />
         </div>
         {showModel && <ShowModel />}
+        {wrongModel && <WrongModel />}
         <div className="alphabets">
           <div className='row row1'>
             <div className="veg_rect"><button value="0" onClick={checking}>Bringle</button></div>
