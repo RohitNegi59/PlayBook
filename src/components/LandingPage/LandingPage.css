@@ -153,10 +153,17 @@
         height: auto;
 
     }
+
     .LandingBackground::before {
+    
+
+        content: '';
         height: auto;
-background: none;
-        background-color: aqua;
+        background-image: url(/back.jpg);
+        background-size: 100%;
+        position: absolute;
+        inset: 0;
+        opacity: 0.6;
     }
 
     .middle {
@@ -169,11 +176,16 @@ background: none;
         flex-wrap: wrap;
     }
 
-    #middle_left_petel ,#top_right_petel ,#middle_right_petel, #bottom_right_petel,#bottom_left_petel,#top_left_petel {
+    #middle_left_petel,
+    #top_right_petel,
+    #middle_right_petel,
+    #bottom_right_petel,
+    #bottom_left_petel,
+    #top_left_petel {
         border-radius: 50%;
     }
 
-  
+
 
 }
 
