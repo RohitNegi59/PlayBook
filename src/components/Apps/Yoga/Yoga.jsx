@@ -55,12 +55,12 @@ const close = () => {
     {child  && < Child close={close} />}
     {dog  && < Dog close={close} />}
     {cat  && < Cat close={close} />}
-   <div className='row'>
+   <div className='row_yoga'>
    <div className='yog'><img className='Pose' src="./yoga/mount.jpg" onClick={mountainpose}></img>Mountain Pose</div>
       <div className='yog Tree_Pose'><img className='Pose' src="./yoga/tree.jpg" onClick={tree}></img>Tree Pose</div>
       <div className='yog '><img className='Pose' src="./yoga/dog.jpg" onClick={dogpose}></img>Downward-Facing Dog</div>
    </div>
-      <div className='row'>
+      <div className='row_yoga'>
       <div className='yog '><img className='Pose' src="./yoga/cat.jpg" onClick={catpose}></img>Cat-Cow Pose</div>
       <div className='yog '><img className='Pose' src="./yoga/snake.jpg" onClick={cobrapose}></img>Cobra Pose </div>
       <div className='yog '><img className='Pose' src="./yoga/Child.jpg" onClick={childpose}></img>Child's Pose</div>

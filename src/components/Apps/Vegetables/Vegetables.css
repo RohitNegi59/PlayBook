@@ -19,6 +19,12 @@
 .veg_rect:active{
     background-color: blueviolet;
 }
+.row_yoga {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .veg_rect>button {
     font-size: xx-large;
     font-family: "Kodchasan", sans-serif;

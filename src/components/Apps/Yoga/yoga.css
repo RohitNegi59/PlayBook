@@ -14,3 +14,27 @@
     float: right;
     background-color: brown;
 }
+
+@media (max-width: 750px) {
+
+    .row_yoga {
+        flex-wrap: wrap;
+    }
+    .showmodel {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 350px;
+        height: 450px;
+        background: transparent;
+        background-size: 105%;
+    }
+    
+}
