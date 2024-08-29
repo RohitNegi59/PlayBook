@@ -34,15 +34,15 @@ function Shape() {
       <div className='Name_div'>
         <div className='Name'>Shape and Color</div></div>
       <div className=''>
-        <div className='row row1'>
-          <div id="hexagone" className='shape'onClick={playHexagone}>Hexagon</div>
-          <div id="square" className='shape'onClick={playSquare}>Square</div>
-          <div id="penatgone" className='shape'onClick={playPentagon}>Penatgon</div>
+        <div className='row_shape row1'>
+          <div id="hexagone" className='shape' onClick={playHexagone}><h1 className='shape_text'>Hexagon</h1></div>
+          <div id="square" className='shape' onClick={playSquare}><h1 className='shape_text'>Square</h1></div>
+          <div id="penatgone" className='shape' onClick={playPentagon}><h1 className='shape_text'>Penatgon</h1></div>
         </div>
-        <div className='row row2'>
-          <button id="rectangle" className='shape 'onClick={playRectangle}>Rectangle</button>
-          <button id="triangle" className='shape 'onClick={playTriangle}>Triangle</button>
-          <button value="Circle" id="circle" className='shape 'onClick={playCircle}>Circle</button>
+        <div className='row_shape row2'>
+          <button id="rectangle" className='shape' onClick={playRectangle}><h1 className='shape_text'>Rectangle</h1></button>
+          <button id="triangle" className='shape' onClick={playTriangle}><h1 className='shape_text'>Triangle</h1></button>
+          <button value="Circle" id="circle" className='shape' onClick={playCircle}><h1 className='shape_text'>Circle</h1></button>
 
         </div>
       </div>
