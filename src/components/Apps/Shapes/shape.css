@@ -74,7 +74,10 @@
 @media (max-width: 750px) {
 
     .outer {
+        background-image: url(/shapeback.jpg);
+        background-repeat: repeat;
         height: auto;
+
     }
 
     .Name_div {
