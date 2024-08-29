@@ -29,3 +29,17 @@
     height: 100%;
     border-radius: 50%;
 }
+
+@media (max-width: 750px) {
+
+    .veg_rect{
+        margin: 3px;
+        width: 100px;
+        height: 70px;
+    }
+    .veg_rect>button{
+        font-family: "Kodchasan", sans-serif;
+        font-size: large;
+    }
+}
+
