@@ -46,6 +46,12 @@ function Vegetables() {
     }
     else {
       setShowModel(false);
+      setWrongModel(true);
+      setTimeout(() => {
+        setWrongModel(false);
+        const newIndex = Math.floor(Math.random() * images.length);
+        setCurrentIndex(newIndex);
+      }, 3000);
     }
   };
 
