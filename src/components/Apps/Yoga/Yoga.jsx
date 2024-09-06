@@ -56,14 +56,14 @@ const close = () => {
     {dog  && < Dog close={close} />}
     {cat  && < Cat close={close} />}
    <div className='row_yoga'>
-   <div className='yog'><img className='Pose' src="./yoga/mount.jpg" onClick={mountainpose}></img>Mountain Pose</div>
-      <div className='yog Tree_Pose'><img className='Pose' src="./yoga/tree.jpg" onClick={tree}></img>Tree Pose</div>
-      <div className='yog '><img className='Pose' src="./yoga/dog.jpg" onClick={dogpose}></img>Downward-Facing Dog</div>
+   <div className='yog'><img className='Pose' src="./yoga/mount.jpg" onClick={mountainpose}></img><h1 className='yog_text'>Mountain Pose</h1></div>
+      <div className='yog Tree_Pose'><img className='Pose' src="./yoga/tree.jpg" onClick={tree}></img><h1 className='yog_text'>Tree Pose</h1></div>
+      <div className='yog '><img className='Pose' src="./yoga/dog.jpg" onClick={dogpose}></img><h1 className='yog_text'>Downward-Facing Dog</h1></div>
    </div>
       <div className='row_yoga'>
-      <div className='yog '><img className='Pose' src="./yoga/cat.jpg" onClick={catpose}></img>Cat-Cow Pose</div>
-      <div className='yog '><img className='Pose' src="./yoga/snake.jpg" onClick={cobrapose}></img>Cobra Pose </div>
-      <div className='yog '><img className='Pose' src="./yoga/Child.jpg" onClick={childpose}></img>Child's Pose</div>
+      <div className='yog '><img className='Pose' src="./yoga/cat.jpg" onClick={catpose}></img><h1 className='yog_text'>Cat-Cow Pose</h1></div>
+      <div className='yog '><img className='Pose' src="./yoga/snake.jpg" onClick={cobrapose}></img><h1 className='yog_text'>Cobra Pose</h1> </div>
+      <div className='yog '><img className='Pose' src="./yoga/Child.jpg" onClick={childpose}></img><h1 className='yog_text'>Child's Pose</h1></div>
 
       </div>
     </div>

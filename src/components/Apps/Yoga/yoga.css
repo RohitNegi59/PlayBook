@@ -1,13 +1,23 @@
 .yog{
-    margin: 10px;
-    width: 15rem;
+    margin: 5px;
+    width: 200px;
     height: 200px;
     border: 2px solid black;
+    background-color: whitesmoke;
+  
+}
+.yog_text{
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
 .Pose{
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 .yog_close_button{
     color: white;
