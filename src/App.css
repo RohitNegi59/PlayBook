@@ -18,10 +18,16 @@ body::before {
   
 
 .widthofapp {
-    width: 100%;
+    width: 60%;
 }
 
 .card_image{
   width: 100%;
   height: 100%;
+}
+@media (max-width: 992px) {
+  .widthofapp {
+    width: 100%;
+}
+
 }
