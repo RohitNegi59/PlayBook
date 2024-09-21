@@ -64,3 +64,9 @@
   background-color: white;
   border-radius: 50%;
 }
+@media (max-width: 750px) {
+
+  .Drawing_board{
+    rotate: 90deg;
+  }
+}
